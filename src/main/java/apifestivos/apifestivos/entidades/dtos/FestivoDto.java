@@ -2,9 +2,12 @@ package apifestivos.apifestivos.entidades.dtos;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class FestivoDto {
 
     private String festivo;
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date fecha;
 
     public FestivoDto() {
